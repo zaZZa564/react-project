@@ -5,7 +5,7 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <Header title='user list' />
+        <Header title='car list' />
       </div>
     );
   }
