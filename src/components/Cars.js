@@ -40,7 +40,7 @@ class Cars extends React.Component {
     return (
       <div>
         {this.cars.map((el) => (
-          <div className="car">
+          <div className="car" key={el.id}>
             <h3>{el.model}</h3>
             <p>brend: {el.brend}</p>
             <p>tier:{el.tier}</p>
