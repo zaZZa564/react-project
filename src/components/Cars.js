@@ -37,17 +37,27 @@ class Cars extends React.Component {
   ];
 
   render() {
-    return (
-      <div>
-        {this.cars.map((el) => (
-          <div className="car" key={el.id}>
-            <h3>{el.model}</h3>
-            <p>brend: {el.brend}</p>
-            <p>tier:{el.tier}</p>
-          </div>
-        ))}
-      </div>
-    );
+    if(this.cars.length > 0) {
+      return (
+        <div>
+          {this.cars.map((el) => (
+            <div className="car" key={el.id}>
+              <h3>{el.model}</h3>
+              <p>brend: {el.brend}</p>
+              <p>tier:{el.tier}</p>
+              <p>{el.horsePower >= 750 ? 'u cant afford it' : 'it\'s cheap'}</p>
+            </div>
+          ))}
+        </div>
+      ); 
+    }
+    else {
+      return(
+        <div className="car">
+          <h3>u r poor piece of shit</h3>
+        </div>
+      );
+    }
   }
 }
 
