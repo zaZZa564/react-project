@@ -38,7 +38,15 @@ class Cars extends React.Component {
 
   render() {
     return (
-      <div></div>
+      <div>
+        {this.cars.map((el) => (
+          <div className="car">
+            <h3>{el.model}</h3>
+            <p>brend: {el.brend}</p>
+            <p>tier:{el.tier}</p>
+          </div>
+        ))}
+      </div>
     );
   }
 }
