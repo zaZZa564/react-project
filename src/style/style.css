@@ -40,3 +40,22 @@ main .car {
   background-color: var(--contrast-color);
   padding: 20px;
 }
+
+/* icons */
+.delete-icon {
+  float: right;
+  color: var(--primary-color);
+  cursor: pointer;
+  transform: scale(2);
+}
+.edit-icon {
+  float: right;
+  margin-right: 25px;
+  color: var(--primary-color);
+  cursor: pointer;
+  transform: scale(2);
+}
+.delete-icon:hover,
+.edit-icon:hover {
+  opacity: 0.5;
+}
