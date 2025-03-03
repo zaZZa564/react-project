@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./components/Header";
 import Cars from "./components/Cars";
+import AddCar from "./components/AddCar";
 
 class App extends React.Component {
   render() {
@@ -10,7 +11,9 @@ class App extends React.Component {
         <main>
           <Cars />
         </main>
-        <aside></aside>
+        <aside>
+          <AddCar />
+        </aside>
       </div>
     );
   }

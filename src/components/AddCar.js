@@ -10,6 +10,7 @@ class AddCar extends React.Component {
         <input placeholder="horsePower"/>
         <input placeholder="seats"/>
         <input placeholder="price"/>
+        <button type="button">add</button>
       </form>
     );
   }
