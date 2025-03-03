@@ -10,8 +10,9 @@ class Car extends React.Component {
           <IoHammerSharp className="edit-icon" />
           <h3>{this.car.model}</h3>
           <p>brend: {this.car.brend}</p>
-          <p>tier:{this.car.tier}</p>
+          <p>tier: {this.car.tier}</p>
           <b>{this.car.horsePower >= 750 ? 'u cant afford it' : 'it\'s cheap'}</b>
+          <p><strong>price: {this.car.price}</strong></p>
         </div>
     );
   }

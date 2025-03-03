@@ -12,7 +12,8 @@ class Cars extends React.Component {
           tier: 'middle',
           model: 'Archer Hella EC-D i360',
           horsePower: 212,
-          seats: 4
+          seats: 4,
+          price: 1500
         },
         {
           id: 2,
@@ -20,7 +21,8 @@ class Cars extends React.Component {
           tier: 'corporate',
           model: 'Delamain Cab',
           horsePower: 333,
-          seats: 4
+          seats: 4,
+          price: 2000
         },
         {
           id: 3,
@@ -28,7 +30,8 @@ class Cars extends React.Component {
           tier: 'upper',
           model: 'Herrera Outlaw GTS',
           horsePower: 755,
-          seats: 4
+          seats: 4,
+          price: 7500
         },
         {
           id: 4,
@@ -36,7 +39,8 @@ class Cars extends React.Component {
           tier: 'upper',
           model: 'Rayfield Caliburn',
           horsePower: 1660,
-          seats: 2
+          seats: 2,
+          price: 2400
         }
       ]
     }
