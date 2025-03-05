@@ -59,3 +59,16 @@ main .car {
 .edit-icon:hover {
   opacity: 0.5;
 }
+
+aside form input, aside form textarea, aside form button {
+  width: 90%;
+  padding: 15px 5%;
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  margin-bottom: 10px;
+  border: 0;
+  background: var(--header-background-color);
+  color: var(--secondary-color);
+  outline: none;
+  font-size: 15px;
+}
