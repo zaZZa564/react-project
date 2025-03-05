@@ -1,3 +1,12 @@
+/* animations */
+@keyframes hover{
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 0.8;
+  }
+}
 /* colors */
 :root {
   --primary-color: #FDF1DD;
@@ -10,6 +19,7 @@
 * {
   margin: 0;
   padding: 0;
+  border-radius: 8px;
 }
 body {
   background-color: var(--background-color);
@@ -42,22 +52,30 @@ main .car {
 }
 
 /* icons */
-.delete-icon {
-  float: right;
-  color: var(--primary-color);
-  cursor: pointer;
-  transform: scale(2);
-}
 .edit-icon {
   float: right;
   margin-right: 25px;
-  color: var(--primary-color);
+}
+.edit-icon, .delete-icon {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
   transform: scale(2);
+  color: var(--primary-color);
+  float: right;
 }
 .delete-icon:hover,
 .edit-icon:hover {
-  opacity: 0.5;
+  transform: scale(2.15);
+}
+.edit-icon:active, .delete-icon:active {
+  transform: scale(1.85);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 aside form input, aside form textarea, aside form button {
@@ -71,4 +89,14 @@ aside form input, aside form textarea, aside form button {
   color: var(--secondary-color);
   outline: none;
   font-size: 15px;
+}
+button {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+button:hover {
+  transform: scale(1.05);
+}
+button:active {
+  transform: scale(0.95);
 }
