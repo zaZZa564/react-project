@@ -34,7 +34,14 @@ class AddCar extends React.Component {
         <input placeholder="price"
           onChange={(e) => {this.setState({price: e.target.value})}}
         />
-        <button type="button">add</button>
+        <button type="button" onClick={() => {this.props.onAdd({
+          brend: this.state.brend,
+          tier: this.state.tier,
+          model: this.state.model,
+          horsePower: this.state.horsePower,
+          seats: this.state.seats,
+          price: this.state.price
+        })}}>add</button>
       </form>
     );
   }

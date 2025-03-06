@@ -56,10 +56,14 @@ class App extends React.Component {
           <Cars carsList={this.state.cars}/>
         </main>
         <aside>
-          <AddCar />
+          <AddCar onAdd={this.addCar}/>
         </aside>
       </div>
     );
+  }
+
+  addCar(car) {
+    console.log(car);
   }
 }
 
