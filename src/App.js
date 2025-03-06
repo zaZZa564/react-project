@@ -46,6 +46,7 @@ class App extends React.Component {
         }
       ]
     }
+    this.addCar = this.addCar.bind(this);
   }
 
   render() {
@@ -63,7 +64,8 @@ class App extends React.Component {
   }
 
   addCar(car) {
-    console.log(car);
+    const id = this.state.cars.length + 1;
+    this.setState({cars: [...this.state.cars, {id, ...car}]});
   }
 }
 
